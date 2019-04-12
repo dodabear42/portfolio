@@ -8,10 +8,10 @@
                 LBH - Web Developer 
               
         </title>
-
-        <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="styles.css"/>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- set style sheets and fonts -->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Code+Pro" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -23,13 +23,15 @@
                         <!-- Setting tabindex to zero ensures
                             navigation using keyboard-only &
                             complies with WCAG 2.0 Section 2.1.3 Level AAA**-->
-                        <a href="#top" tabindex="0">Laura B Hicks</a>
+                        <a href="#top" tabindex="0">Laura B Hicks | Web Developer
+                            <img src="" alt="flag-icon"/>
+                        </a>
                     </li>
                     <li>
-                        <a href="#about-section" tabindex="0">About</a>
+                        <a href="#about-section" tabindex="0">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#portfolio-section" tabindex="0">Portfolio</a>
+                        <a href="#portfolio-section" tabindex="0">About</a>
                     </li>
                     <li>
                         <a href="#contact-section" tabindex="0">Contact</a>
@@ -38,37 +40,87 @@
             </nav>
         </header>
         
-        <main class="container-fluid">
-            <section id="niche-section">
-                <h1>Laura B Hicks</h1>
-                <h3>web developer with a passion for inclusive design</h3>
-                <div class="container">
-                    <h2>Website Accessibility Benefits</h2>
-                    <ul>
-                        <li>Reach roughly one billion more people world wide</li>
-                        <li>Comply with legal requirements of ADA Section 508</li>
-                        <li>May enhance search engine optimization (SEO) WebAIM Blog</li>
-                    </ul>
-                    <img src="img/wheelchairUser.jpg" alt="wheelchair user navigating sidewalk"/>
+        <main class="full-width">
+
+
+<!-- Intro -->
+
+            <section class="full-width" id="intro-section">
+                <h1>let's code something cool</h1>
+            </section>
+            
+<!-- Portfolio -->        
+                      
+            
+            <section class="full-width" id="portfolio-section">
+                <div class="full-width"></div>
+                    <div class="half-width">
+                        <img src="img/rogue-pickings-thumbnail.png" alt="Rogue Pickings project" />
+                    </div>
+                    <div class="half-width">
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="full-width"></div>
+                    <div class="half-width">
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="half-width">
+                        <img src="img/jubilee-thumbnail.png" alt="Jubilee Austen project" />
+                    </div>
+                </div>
+                <div class="full-width"></div>
+                    <div class="half-width">
+                        <img/>
+                    </div>
+                    <div class="half-width">
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+            </section>
+
+
+<!--  About -->
+
+            <section class="full-width" id="about-section">
+                <h2>About Me</h2>
+                <div class="half-width" id="about-content">
+                    <p>
+                        I am passionate about web accessibility.
+                    </p>
+                    <p>
+
+                    </p>
+                    <p>
+
+                    </p>
                 </div>
             </section>
-        
-            <section id="about-section"></section>
-                <div class="container">
-                    <img src="img/Profile.jpg" alt="Headshot of woman, long hair, blue-frame glasses, smiling"/>
-                </div>
-            
-            
-            <section id="portfolio-section"></section>
-                <div class="container">
 
-                </div>
-            
-            <section id="contact-section"></section>
-                <div class="container">
 
-                </div>
+
+<!-- Contact -->
+
+            
+
+            <footer>
+
+                <section class="full-width" id="contact-section">
+                    <div class="container">
+
+                    </div>
+                </section>
+            </footer>
+
+            
         </main>
-        <footer></footer>
+        
     </body>
 </html>
