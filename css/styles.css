@@ -95,7 +95,7 @@ header nav {
         
     nav ul li {
         display: inline-block;
-        margin: 0 40px 0 40px;
+        margin: 0 40px;
     }
 }
 
@@ -112,5 +112,15 @@ header nav {
 @media (min-width: 1024px) {
     header, section {
         margin: 0 100px;
+    }
+
+    #left-nav, #right-nav {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1200 px) {
+    body {
+        max-width: 1200px;
     }
 }
