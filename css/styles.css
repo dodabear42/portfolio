@@ -1,6 +1,8 @@
-/** {
-    border: 1px solid pink;
-}*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
 /**********************************************************************
     BASIC
@@ -31,16 +33,6 @@ header, section {
     margin: 0 5px;
 }
 
-/****prevent li indentation***/
-ul, li {
-    margin-left: 0;
-    padding-left: 0;
-}
-
-
-.full-width {
-    width: 100%;
-}
 
 
 /**************************************************************************
@@ -48,7 +40,7 @@ ul, li {
 **************************************************************************/
 
 header {
-    text-align: center;
+    
     text-transform: lowercase;
     font-size: 24px;
 }
@@ -58,6 +50,10 @@ header nav {
     padding-top: 30px;
 }
 
+.main-nav {
+    text-align: center;
+    margin: 15px auto;
+}
 
 
 
@@ -85,33 +81,47 @@ header nav {
     MEDIA QUIERIES - MOBILE-FIRST
 *********************************************************************************/
 
-@media  (min-width: 640px) {
-
-    header, section {
-        margin: 0 20px;
-        height: 150px;
-    }
-
-        
-    nav ul li {
-        display: inline-block;
-        margin: 0 40px 0 40px;
-    }
-}
-
 
 @media (min-width: 768px) {
     header, section {
         margin: 0 50px;
     }
-
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
     
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
 }
 
 
 @media (min-width: 1024px) {
-    header, section {
-        margin: 0 100px;
+    body {
+        max-width: 90%;
     }
 
+}
+
+@media (min-width: 1200 px) {
+    body {
+        max-width: 1200px;
+    }
 }
