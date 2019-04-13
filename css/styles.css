@@ -1,11 +1,13 @@
-
+/** {
+    border: 1px solid pink;
+}*/
 
 /**********************************************************************
     BASIC
 ***********************************************************************/
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: black;
+    background-color: #1f202b;
     color: white;
 }
 
@@ -18,13 +20,20 @@ ul {
     list-style: none;
 }
 
-section {
-    margin-left: 100px;
-}
 
 h1 {
     font-family: 'Source Code Pro', monospace;
     color: white;
+}
+
+header, section {
+    margin: 0 5px;
+}
+
+/****prevent li indentation***/
+ul, li {
+    margin-left: 0;
+    padding-left: 0;
 }
 
 
@@ -36,6 +45,13 @@ header {
     text-align: center;
     text-transform: lowercase;
 }
+
+
+header nav {
+    padding-top: 30px;
+}
+
+
 
 /**************************************************************************
     INTRO
@@ -59,3 +75,38 @@ header {
 /********************************************************************************
     MEDIA QUIERIES - MOBILE-FIRST
 *********************************************************************************/
+
+@media  (min-width: 640px) {
+
+    header, section {
+        margin: 0 20px;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    header, section {
+        margin: 0 50px;
+    }
+
+    /**************************************************************************
+    GRID
+    **************************************************************************
+
+    .full-width {
+
+        width: 100%;
+    }
+
+    .half-width {
+        width: 50%;
+    }*/
+}
+
+
+@media (min-width: 1024px) {
+    header, section {
+        margin: 0 100px;
+    }
+}
