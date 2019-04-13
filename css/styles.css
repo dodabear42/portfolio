@@ -9,6 +9,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #1f202b;
     color: white;
+    width: 100%;
 }
 
 a {
@@ -34,6 +35,11 @@ header, section {
 ul, li {
     margin-left: 0;
     padding-left: 0;
+}
+
+
+.full-width {
+    width: 100%;
 }
 
 
@@ -99,18 +105,7 @@ header nav {
         margin: 0 50px;
     }
 
-    /**************************************************************************
-    GRID
-    **************************************************************************
-
-    .full-width {
-
-        width: 100%;
-    }
-
-    .half-width {
-        width: 50%;
-    }*/
+    
 }
 
 
@@ -118,4 +113,5 @@ header nav {
     header, section {
         margin: 0 100px;
     }
+
 }
