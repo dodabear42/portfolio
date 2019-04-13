@@ -44,12 +44,15 @@ ul, li {
 header {
     text-align: center;
     text-transform: lowercase;
+    font-size: 24px;
 }
 
 
 header nav {
     padding-top: 30px;
 }
+
+
 
 
 
@@ -80,8 +83,14 @@ header nav {
 
     header, section {
         margin: 0 20px;
+        height: 150px;
     }
 
+        
+    nav ul li {
+        display: inline-block;
+        margin: 0 40px 0 40px;
+    }
 }
 
 
