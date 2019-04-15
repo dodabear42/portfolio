@@ -1,4 +1,6 @@
-
+* {
+    border: 1px solid pink;
+}
 
 /**********************************************************************
     BASIC
@@ -25,9 +27,6 @@ h1 {
     color: white;
 }
 
-header, section {
-    margin: 0 5px;
-}
 
 .full-width {
     width: 1400px;
@@ -35,7 +34,7 @@ header, section {
 }
 
 .half-width {
-    width: 700px;
+    width: 695px;
     display: inline-block;
     
 }
@@ -78,6 +77,7 @@ header nav {
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 280px;
+
     
 }
 
@@ -94,18 +94,21 @@ header nav {
 **************************************************************************/
 #portfolio-section {
     height: 1550px;
-    
+ 
 }
 
 #portfolio-section .full-width {
     height: 350px;
-    
+  
 }
 
 .portfolio-image {
     width: 550px;
     height: auto;
+    padding-left: 100px;
 }
+
+
 
 /**************************************************************************
     ABOUT
