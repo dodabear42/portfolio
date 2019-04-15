@@ -1,4 +1,6 @@
-
+/* {
+    border: 1px solid pink;
+}*/
 
 /**********************************************************************
     BASIC
@@ -6,11 +8,10 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #1f202b;
-    color: white;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0;
+    color: white;   
+    box-sizing: border-box; 
     margin: 0;
+    padding: 0;
 }
 
 a {
@@ -26,12 +27,34 @@ ul {
 h1 {
     font-family: 'Source Code Pro', monospace;
     color: white;
+    font-size: 72px;
 }
 
-header, section {
-    margin: 0 5px;
+h2 {
+    font-family: 'Source Code Pro', monospace;
+    color: #fa0075;
+    font-size: 32px;
+    text-align: center;
+    text-transform: lowercase;
+    margin: 50px 0 100px 0;
 }
 
+
+.full-width {
+    width: 1400px;
+    
+}
+
+.half-width {
+    width: 695px;
+    display: inline-block;
+    
+}
+
+.third-width {
+    width: 466px;
+  
+}
 
 
 /**************************************************************************
@@ -62,6 +85,20 @@ header nav {
 **************************************************************************/
 #intro-section {
     height: 720px;
+    background-image: url('../img/hero-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 280px;
+
+    
+}
+
+#intro-section h1 {
+    padding-left: 100px;
+}
+
+#intro-section h1 span {
+    color: #fa0075;
 }
 
 /**************************************************************************
@@ -69,13 +106,34 @@ header nav {
 **************************************************************************/
 #portfolio-section {
     height: 1550px;
+ 
 }
+
+#portfolio-section .half-width {
+    height: 350px;
+    float: left;
+}
+
+.portfolio-image {
+    width: 500px;
+    height: auto;
+    margin: 0 100px;
+    overflow: hidden;
+    object-fit: scale-down;
+}
+.portfolio-blurb p {
+    
+    margin: 0 100px;
+}
+
 
 /**************************************************************************
     ABOUT
 **************************************************************************/
 #about-section {
     height: 550px;
+    background-image: url('../img/about-me.png');
+    background-size: cover;
 }
 
 /**************************************************************************
@@ -86,9 +144,11 @@ header nav {
 }
 
 
+
+
 /********************************************************************************
     MEDIA QUIERIES - MOBILE-FIRST
-*********************************************************************************/
+*********************************************************************************
 
 
 @media (min-width: 768px) {
@@ -133,4 +193,4 @@ header nav {
     body {
         max-width: 1200px;
     }
-}
+}*/
