@@ -56,7 +56,7 @@ h3 {
 }
 
 .third-width {
-    width: 466px;
+    width: 460px;
     display: inline-block;
   
 }
@@ -146,7 +146,7 @@ header li {
 }
 .portfolio-blurb p {
     
-    margin: 0 100px;
+    padding: 0 100px;
 }
 
 
@@ -156,7 +156,7 @@ header li {
 #about-section {
     height: 550px;
     background-image: url('../img/about-me.png');
-    background-size: cover;
+    background-size: contain;
 }
 
 #about-section h2 {
@@ -164,7 +164,7 @@ header li {
 }
 
 #about-section p {
-    margin-left: 100px;
+    padding-left: 100px;
     color: black;
 }
 
@@ -175,6 +175,22 @@ header li {
     height: 450px;
 }
 
+#contact-section h3, #contact-section p {
+    text-align: center;
+}
+
+#contact-section ul {
+    padding-left: 120px;
+}
+
+#contact-section li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#copyright {
+    margin-top: 100px;
+}
 
 
 
