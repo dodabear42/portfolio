@@ -23,18 +23,19 @@ ul {
     list-style: none;
 }
 
+h1, h2 {
+    font-family: 'Source Code Pro', monospace;
+}
 
 h1 {
     color: white;
-    font-family: 'Source Code Pro', monospace;
     font-size: 72px;
 }
 
 h2 {
     color: #fa0075;
-    font-family: 'Source Code Pro', monospace;
     font-size: 32px;
-    margin: 50px 0 100px 0;
+    margin: 50px 0 50px 0;
     text-align: center;
     text-transform: lowercase;
 }
@@ -151,7 +152,7 @@ header li {
     ABOUT
 **************************************************************************/
 #about-section {
-    background-image: url('../img/about-me.png');
+    background: url('../img/about-me.png') no-repeat;
     background-size: contain;
     height: 550px;
 }
