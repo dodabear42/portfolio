@@ -57,6 +57,7 @@ h3 {
 
 .third-width {
     width: 466px;
+    display: inline-block;
   
 }
 
@@ -66,20 +67,38 @@ h3 {
 **************************************************************************/
 
 header {
-    
+    height: 75px;
     text-transform: lowercase;
     font-size: 24px;
+    clear: both;
 }
 
 
 header nav {
     padding-top: 30px;
+    clear: both;
 }
 
 .main-nav {
-    text-align: center;
-    margin: 15px auto;
+    text-align: right;
+    margin: 0 auto;
 }
+
+header li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.logo {
+    float: left;
+    margin-left: 50px;
+}
+
+#main-nav {
+    float: right;
+}
+
+
 
 
 
