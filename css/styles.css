@@ -137,13 +137,10 @@ header li {
 .portfolio-image {
     height: auto;
     margin: 0 100px;
-    object-fit: scale-down;
-    overflow: hidden;
     width: 500px;
 }
 
 .portfolio-blurb p {
-    
     padding: 0 100px;
 }
 
