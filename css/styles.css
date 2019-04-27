@@ -5,11 +5,15 @@
 /**********************************************************************
     BASIC
 ***********************************************************************/
+html {
+    font-size: 16px;
+}
+
 body {
-    background-color: #1f202b;
-    box-sizing: border-box;
+    background-color: #010f26;
     color: white;  
     font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -17,6 +21,7 @@ body {
 
 a {
     color: white;
+    font-size: .875em;
     text-decoration: none;
 }
 
@@ -30,12 +35,12 @@ h1, h2 {
 
 h1 {
     color: white;
-    font-size: 72px;
+    font-size: 2.5em;
 }
 
 h2 {
-    color: #fa0075;
-    font-size: 32px;
+    color: #010f26;
+    font-size: 1.75em;
     margin: 50px 0 50px 0;
     text-align: center;
     text-transform: lowercase;
@@ -47,77 +52,78 @@ h3 {
 
 
 .full-width {
-    width: 1400px;
+    max-width: 767px;
+    width: 100%;
 }
 
 .half-width {
-    display: inline-block;
-    width: 695px;    
+    width: 100%;    
 }
 
 .third-width {
-    display: inline-block;
-    width: 460px;  
+    width: 100%; 
 }
 
 
 /**************************************************************************
     HEADER
 **************************************************************************/
-
 header {
-    clear: both;
-    font-size: 24px;
+    align-items: center;
+    display: flex;
     height: 75px;
-    text-transform: lowercase;    
-}
-
-
-header nav {
-    clear: both;
-    padding-top: 30px;
-}
-
-.main-nav {
-    margin: 0 auto;
-    text-align: right;
-}
-
-header li {
-    display: inline-block;
-    padding: 0 15px;
+    justify-content: center;
+    text-transform: lowercase;
+    width: 100%;
 }
 
 .logo {
-    float: left;
-    margin-left: 50px;
-}
-
-#main-nav {
-    float: right;
+    text-align: center;
+    width: 300px;
 }
 
 
+header nav,
+header ul {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
 
+header ul {
+    margin: 15px 0;
+    padding: 0;
+    width: 100%;
+}
 
+header li {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 5px;
+}
 
+header nav {
+    padding-top: 30px;
+}
 
 /**************************************************************************
     INTRO
 **************************************************************************/
 #intro-section {
-    background-image: url('../img/hero-background.png');
+    background-image: url('../img/hero-background.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 720px;
+    background-size: cover;
+    height: 350px;
 }
 
 #intro-section h1 {
-    padding: 200px 0 0 100px;
+    padding: 10%;
 }
 
 #intro-section h1 span {
-    color: #fa0075;
+    color: #02ffe9;
 }
 
 
@@ -127,11 +133,10 @@ header li {
     PORTFOLIO
 **************************************************************************/
 #portfolio-section {
-    height: 1550px;
+    height: auto;
 }
 
 #portfolio-section .half-width {
-    float: left;
     height: 350px;
 }
 
@@ -194,50 +199,37 @@ header li {
 
 
 /********************************************************************************
-    MEDIA QUIERIES - MOBILE-FIRST
-*********************************************************************************
+=================================================================================
+    MEDIA QUIERIES - Tablet screens
+=================================================================================
+*********************************************************************************/
 
 
 @media (min-width: 768px) {
-    header, section {
-        margin: 0 50px;
+    /* ----- header ----- */
+    header .logo,
+    header ul {
+        flex-basis: 46%;
     }
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 0;
-        height: 70px;
-        align-items: center;
-    }
+
     
-
-    .main-nav {
-        display: flex;
-        margin-right: 30px;
-        flex-direction: row;
-        justify-content: flex-end;
-
+    .full-width {
+        max-width: 1000px;
+        width: 100%;
     }
 
-    .main-nav li {
-        margin: 0;
+    .half-width {
+        width: 50%;    
     }
 
-    .nav-links {
-        margin-left: 40px;
+    .third-width {
+        width: 50%; 
     }
 }
 
-
-@media (min-width: 1024px) {
-    body {
-        max-width: 90%;
-    }
-
-}
 
 @media (min-width: 1200 px) {
     body {
         max-width: 1200px;
     }
-}*/
+}
