@@ -50,6 +50,13 @@ h3 {
     font-weight: bold;
 }
 
+img {
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+}
 
 .full-width {
     max-width: 767px;
@@ -134,6 +141,10 @@ header nav {
     PORTFOLIO
 **************************************************************************/
 #portfolio-section {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     height: auto;
 }
 
@@ -211,6 +222,14 @@ header nav {
     header .logo,
     header ul {
         flex-basis: 46%;
+    }
+
+    #intro-section {
+        height: 300px;
+    }
+
+    #intro-section h1 {
+        height: 190px;
     }
 
     
