@@ -1,6 +1,3 @@
-* {
-    border: 1px solid pink;
-}
 
 /**********************************************************************
     BASIC
@@ -11,7 +8,7 @@ html {
 
 body {
     background-color: #010f26;
-    color: white;  
+    color: #e2e2e2;  
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     margin: 0;
@@ -20,7 +17,7 @@ body {
 }
 
 a {
-    color: white;
+    color: #e2e2e2;
     font-size: .875em;
     text-decoration: none;
 }
@@ -34,19 +31,17 @@ h1, h2 {
 }
 
 h1 {
-    color: #e2e2e2;
+
     font-size: 2.25em;
 }
 
 h2 {
-    color: #e2e2e2;
     font-size: 1.75em;
     text-align: center;
     text-transform: lowercase;
 }
 
 h3 {
-    color: #e2e2e2;
     font-size: 1.125em;
     font-weight: bold;
 }
@@ -60,7 +55,6 @@ figure {
 }
 
 .full-width {
-    max-width: 767px;
     width: 100%;
 }
 
@@ -72,7 +66,14 @@ figure {
     width: 100%; 
 }
 
-
+body,
+main {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+}
 /**************************************************************************
     HEADER
 **************************************************************************/
@@ -82,7 +83,7 @@ header {
     height: 75px;
     justify-content: center;
     text-transform: lowercase;
-    flex-basis: 100%;
+    width: 100%;
 }
 
 header .logo {
@@ -128,7 +129,7 @@ header nav {
 
 #intro-section h1 {
     height: 300px;
-    padding: 30px;
+    padding: 15px;
 }
 
 #intro-section h1 span {
@@ -141,7 +142,9 @@ header nav {
 /**************************************************************************
     PORTFOLIO
 **************************************************************************/
-
+#portfolio-section {
+    padding-bottom: 20px;
+}
 #portfolio-section,
 #portfolio-section .project-wrapper {
     align-items: center;
@@ -157,29 +160,22 @@ header nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin: 5%;
-    padding-bottom: 5%;
+    margin: 1%;
+    padding: 1%;
 }
-
-
-#portfolio-section figure {
-
-    width: 100%;
-}
-
 
 
 /**************************************************************************
     ABOUT
 **************************************************************************/
 #about-section {
-    align-items: center;
+    align-items: flex-start;
     background: url('../img/about-me.png') no-repeat;
     background-size: cover;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    height: 500px;
+    height: 600px;
 }
 
 #about-content {
@@ -198,13 +194,14 @@ header nav {
 
 #about-section p {
     color: #010f26;
+    margin: 5%;
 }
 
 
 
 
 /**************************************************************************
-    CONTACT
+    CONTACT (footer)
 **************************************************************************/
 footer {
     align-items: center;
@@ -212,12 +209,17 @@ footer {
     justify-content: center;
 }
 
+footer i {
+    color: #02ffe9;
+    font-size: 2em;
+}
+
 #contact-section {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     flex-basis: 90%;
     flex-flow: row wrap;
-    height: 450px;
+    height: auto;
     justify-content: center;
     text-align: center;
 }
@@ -243,6 +245,7 @@ footer {
 }
 
 #copyright {
+    font-size: .875em;
     margin-top: 100px;
 }
 
@@ -257,14 +260,10 @@ footer {
 
 @media (min-width: 768px) {
     /* ----- header ----- */
-    header .logo,
-    header ul {
-        flex-basis: 46%;
-    }
+  
 
     .full-width {
         max-width: 1000px;
-        width: 100%;
     }
 
     .half-width {
@@ -283,6 +282,7 @@ footer {
         height: 190px;
     }
 
+
     #portfolio-section a {
         align-items: flex-start;
         display: flex;
@@ -300,12 +300,20 @@ footer {
         justify-content: center;
     }
     
-
+    #about-section {
+        height: 400px;
+    }
+    #about-section p {
+        height: 200px;
+        margin: 0;
+        padding: 5px;
+    }
 }
 
 
 @media (min-width: 1200 px) {
     body {
         max-width: 1200px;
+        width: 80%;
     }
 }
