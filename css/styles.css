@@ -1,6 +1,6 @@
-/* {
+* {
     border: 1px solid pink;
-}*/
+}
 
 /**********************************************************************
     BASIC
@@ -85,7 +85,7 @@ header {
     flex-basis: 100%;
 }
 
-.logo {
+header .logo {
     text-align: center;
     width: 300px;
 }
@@ -151,18 +151,19 @@ header nav {
     height: auto;
 }
 
-.project-wrapper {
+#portfolio-section .project-wrapper {
+    align-items: center;
     border-bottom: 2px dotted #02ffe9;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     margin: 5%;
     padding-bottom: 5%;
 }
 
 
 #portfolio-section figure {
-    align-items: center;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+
     width: 100%;
 }
 
@@ -172,19 +173,31 @@ header nav {
     ABOUT
 **************************************************************************/
 #about-section {
+    align-items: center;
     background: url('../img/about-me.png') no-repeat;
     background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     height: 500px;
 }
 
+#about-content {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+
 #about-section h2 {
     color: #010f26;
-    padding-top: 5%;;
+    width: 100%;
 }
 
 #about-section p {
     color: #010f26;
-    padding: 0 5%;
 }
 
 
@@ -249,15 +262,6 @@ footer {
         flex-basis: 46%;
     }
 
-    #intro-section {
-        height: 300px;
-    }
-
-    #intro-section h1 {
-        height: 190px;
-    }
-
-    
     .full-width {
         max-width: 1000px;
         width: 100%;
@@ -270,6 +274,33 @@ footer {
     .third-width {
         width: 50%; 
     }
+
+    #intro-section {
+        height: 300px;
+    }
+
+    #intro-section h1 {
+        height: 190px;
+    }
+
+    #portfolio-section a {
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #portfolio-section h3,
+    #portfolio-section p {
+        width: 90%;
+    }
+
+    #portfolio-section .portfolio-blurb {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    
+
 }
 
 
