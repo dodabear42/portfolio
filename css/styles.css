@@ -1,6 +1,6 @@
-/* {
+* {
     border: 1px solid pink;
-}*/
+}
 
 /**********************************************************************
     BASIC
@@ -34,19 +34,20 @@ h1, h2 {
 }
 
 h1 {
-    color: white;
+    color: #e2e2e2;
     font-size: 2.25em;
 }
 
 h2 {
-    color: #010f26;
+    color: #e2e2e2;
     font-size: 1.75em;
-    margin: 50px 0 50px 0;
     text-align: center;
     text-transform: lowercase;
 }
 
 h3 {
+    color: #e2e2e2;
+    font-size: 1.125em;
     font-weight: bold;
 }
 
@@ -81,10 +82,10 @@ header {
     height: 75px;
     justify-content: center;
     text-transform: lowercase;
-    width: 100%;
+    flex-basis: 100%;
 }
 
-.logo {
+header .logo {
     text-align: center;
     width: 300px;
 }
@@ -140,7 +141,9 @@ header nav {
 /**************************************************************************
     PORTFOLIO
 **************************************************************************/
-#portfolio-section {
+
+#portfolio-section,
+#portfolio-section .project-wrapper {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
@@ -148,37 +151,53 @@ header nav {
     height: auto;
 }
 
-#portfolio-section .half-width {
-    height: 350px;
+#portfolio-section .project-wrapper {
+    align-items: center;
+    border-bottom: 2px dotted #02ffe9;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5%;
+    padding-bottom: 5%;
 }
 
-.portfolio-image {
-    height: auto;
-    margin: 0 100px;
-    width: 500px;
+
+#portfolio-section figure {
+
+    width: 100%;
 }
 
-.portfolio-blurb p, #portfolio-section h3 {
-    padding: 0 100px;
-}
 
 
 /**************************************************************************
     ABOUT
 **************************************************************************/
 #about-section {
+    align-items: center;
     background: url('../img/about-me.png') no-repeat;
-    background-size: contain;
-    height: 550px;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 500px;
 }
 
+#about-content {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+
 #about-section h2 {
-    padding-top: 50px;
+    color: #010f26;
+    width: 100%;
 }
 
 #about-section p {
-    color: black;
-    padding-left: 100px;
+    color: #010f26;
 }
 
 
@@ -187,21 +206,40 @@ header nav {
 /**************************************************************************
     CONTACT
 **************************************************************************/
-#contact-section {
-    height: 450px;
+footer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
-#contact-section h3, #contact-section p {
+#contact-section {
+    align-items: center;
+    display: flex;
+    flex-basis: 90%;
+    flex-flow: row wrap;
+    height: 450px;
+    justify-content: center;
     text-align: center;
 }
 
 #contact-section ul {
-    padding-left: 120px;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#contact-section h2 {
+    width: 100%;
 }
 
 #contact-section li {
-    display: inline-block;
-    margin-right: 20px;
+    height: 40px;
+    margin: 5%;
+    padding: 0;
+    width: 40px;
 }
 
 #copyright {
@@ -224,15 +262,6 @@ header nav {
         flex-basis: 46%;
     }
 
-    #intro-section {
-        height: 300px;
-    }
-
-    #intro-section h1 {
-        height: 190px;
-    }
-
-    
     .full-width {
         max-width: 1000px;
         width: 100%;
@@ -245,6 +274,33 @@ header nav {
     .third-width {
         width: 50%; 
     }
+
+    #intro-section {
+        height: 300px;
+    }
+
+    #intro-section h1 {
+        height: 190px;
+    }
+
+    #portfolio-section a {
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #portfolio-section h3,
+    #portfolio-section p {
+        width: 90%;
+    }
+
+    #portfolio-section .portfolio-blurb {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    
+
 }
 
 
